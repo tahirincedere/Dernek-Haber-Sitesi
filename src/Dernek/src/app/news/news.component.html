@@ -3,7 +3,32 @@
     <div class="col-md-3" *ngFor="let news of newsList">
       <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title"><a routerLink="/news/{{news.id}}">{{news.subject}}</a></h5>
+          <div>
+            <button type="button" class="btn btn" (click)="openModal(template)"><h6>{{news.subject}}</h6></button>
+          </div>
+
+          <!--Modal-->
+          <ng-template #template>
+
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">{{news.subject}}</h5>
+              
+            </div>
+            <div class="modal-body">
+              <p>{{news.details}}</p>
+              <br>
+              <hr>
+              <p>Date: {{news.validityDate}}</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" (click)="modalRef.hide()">Close</button>
+
+            </div>
+
+
+          </ng-template>
+
+          <hr>
           <h6 class="card-subtitle mb-2 text-muted">{{news.validityDate}}</h6>
           <p class="card-text">{{news.details}}</p>
           <a href="#" class="card-link">{{news.link}}</a>

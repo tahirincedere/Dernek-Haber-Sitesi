@@ -9,9 +9,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {HttpClientModule} from '@angular/common/http'
 import { NewsServiceService } from './services/news-service.service';
 import { AnnouncementServiceService } from './services/announcement-service.service';
-import { NewsDetailComponent } from './news/news-detail/news-detail.component';
 import { AdminModule } from './admin/admin.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import {ModalModule, } from "ngx-bootstrap";
 
 
 @NgModule({
@@ -20,7 +20,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     AnnouncementComponent,
     NewsComponent,
-    NewsDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +27,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AdminModule,
     ReactiveFormsModule,
     AppRoutingModule, 
+    ModalModule.forRoot()
   ],
   providers: [NewsServiceService,AnnouncementServiceService],
   bootstrap: [AppComponent]

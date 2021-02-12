@@ -8,6 +8,7 @@ import { AnnouncementServiceService } from '../services/announcement-service.ser
   styleUrls: ['./announcement.component.css']
 })
 export class AnnouncementComponent implements OnInit {
+
   private announcements:AnnouncementPayload[]=[];
 
   constructor(private announcementService:AnnouncementServiceService) { }
@@ -16,14 +17,10 @@ export class AnnouncementComponent implements OnInit {
   {
     this.announcementService.getAll().subscribe(res=>{
       this.announcements=res;
-      
-     
-      
     })
   }
 
   ngOnInit() {
     this.getAll();
   }
-
 }

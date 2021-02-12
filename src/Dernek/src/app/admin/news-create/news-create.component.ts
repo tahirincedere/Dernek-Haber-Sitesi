@@ -8,6 +8,7 @@ import { NewsServiceService } from 'src/app/services/news-service.service';
   templateUrl: './news-create.component.html',
   styleUrls: ['./news-create.component.css']
 })
+
 export class NewsCreateComponent implements OnInit {
 
   private newsForm:FormGroup;
@@ -21,9 +22,7 @@ export class NewsCreateComponent implements OnInit {
       'details':[null,[Validators.required,Validators.minLength(20)]],
       'link':[null,[Validators.required,Validators.minLength(10)]],
       'validityDate':[null,Validators.required],
-
     })
-
   }
   save()
   {
@@ -40,7 +39,7 @@ export class NewsCreateComponent implements OnInit {
     {
       alert("Boş alanları doldurunuz")
     }
-    
+
   }
 
   f()

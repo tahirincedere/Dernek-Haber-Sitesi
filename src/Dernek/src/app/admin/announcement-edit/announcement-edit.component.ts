@@ -59,9 +59,6 @@ export class AnnouncementEditComponent implements OnInit {
         'validityDate':[announcenmentDb.validityDate,Validators.required]
       })
 
-
-      
-
     }
 
     f()

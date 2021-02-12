@@ -22,11 +22,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     AdminRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-   
-    
-    
+
   ]
   ,providers: [NewsServiceService,AnnouncementServiceService],
-  
+
 })
 export class AdminModule { }
