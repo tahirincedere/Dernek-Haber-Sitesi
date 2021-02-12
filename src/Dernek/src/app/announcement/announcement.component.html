@@ -1,0 +1,17 @@
+
+<div class="container">
+  <div class="row"  *ngFor="let val of announcements">
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{val.subject}}</h5>
+        <p class="card-text">{{val.details}}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong *ngIf="val.createdAt">Date:</strong>{{val.createdAt}}</li>
+       
+      </ul>
+      
+    </div>
+  </div>
+</div>

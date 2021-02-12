@@ -1,0 +1,30 @@
+
+[
+  {
+  "_class": "com.dernekapp.entity.News",
+  "subject" : "Yeni Kaledonya açıklarında 7.6 büyüklüğünde deprem!",
+  "details": "ABD Jeolojik Araştırma Merkezi'nin (USGS) aktardığına göre, Yeni Kaledonya açıklarında Loyalty Adaları'nın güneydoğusunda yerel saatle 13:19'da 7.6 büyüklüğünde bir deprem meydana geldi.",
+    "link": "https://www.mynet.com",
+    "validityDate": "2022-12-28"
+},
+  {
+    "_class": "com.dernekapp.entity.News",
+    "subject" : "Esenyurtda Kavga 5 Ölü",
+    "details": "Esenyurt yenikent mahallesinde çıkan aile kavgasında 2 çocuk bıçaklanarak öldü",
+    "link": "www.esenyurthaber.com.tr",
+    "validityDate": "2024-06-28"
+  },
+  {
+    "_class": "com.dernekapp.entity.Announcement",
+    "subject" : "Köy gezisi",
+    "details": "Memleketimiz Karsa dernek gecesi için otobüsümüz kalkmaktadır..",
+    "validityDate": "2030-01-31"
+
+  },
+  {
+    "_class": "com.dernekapp.entity.Announcement",
+    "subject" : "Cenazemiz var 5 ölü",
+    "details": "Köylümüz insanlarından cemil ailesi komple vefat etmiştir Cenaze namazı teşvikiye caminde kılınacaktır.",
+    "validityDate": "2021-12-28"
+  }
+]

@@ -1,0 +1,24 @@
+<table class="table" *ngIf="announcementList">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Subject</th>
+      <th scope="col">File</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let val of announcementList">
+      <td>{{val.id}}</td>
+      <td>{{val.subject}}</td>
+      <td>{{val.file}}</td>
+
+      <td>
+        <button class="btn btn-info"  routerLink="/admin/announcement/edit/{{val.id}}" >Update</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="delete(val.id)">Delete</button>
+      </td>
+      </tr>
+  </tbody>
+</table>
+<button class="btn btn-primary" routerLink="/admin/announcement/create">Create News</button>

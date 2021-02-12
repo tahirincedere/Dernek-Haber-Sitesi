@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="row">
+    <div class="col-9">
+      <form [formGroup]="forms" (ngSubmit)="save()">
+
+
+
+
+        <div class="form-group">
+          <label for="name">Subject</label>
+          <input type="text" class="form-control" formControlName="subject">
+          <div *ngIf="f().subject.touched && f().subject.invalid">
+            <div class="alert alert-danger"
+             *ngIf=" f().subject.errors.required"> Subject is required
+            </div>
+            <div class="alert alert-danger"
+             *ngIf="f().subject.errors.minlength"> Subject is min characters 5
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="form-group">
+          <label for="name">Details</label>
+          <textarea class="form-control" formControlName="details"></textarea>
+          <div *ngIf="f().details.touched && f().details.invalid">
+            <div class="alert alert-danger"
+             *ngIf=" f().details.errors.required"> Details is required
+            </div>
+            <div class="alert alert-danger"
+             *ngIf="f().details.errors.minlength"> Details is min characters 520
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="form-group">
+          <label for="name">File</label>
+          <input type="text" class="form-control" formControlName="file">
+          <div *ngIf="f().file.touched && f().file.invalid">
+            <div class="alert alert-danger"
+             *ngIf=" f().file.errors.required"> File is required  
+            </div>
+            <div class="alert alert-danger"
+             *ngIf="f().file.errors.minlength"> File is min characters 10
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="name">Validity Date</label>
+            <input type="date" class="form-control" formControlName="validityDate">
+            <div *ngIf="f().validityDate.touched && f().validityDate.invalid">
+              <div class="alert alert-danger"
+               *ngIf=" f().validityDate.errors.required"> Date is required  
+              </div>
+              
+            </div>
+           
+          </div>
+
+
+        </div>
+
+
+        <button type="submit" class="btn btn-secondary">Save</button>
+
+        <button type="button" class="btn btn-info" routerLink="/admin/announcement">Cancel</button>
+
+      </form>
+    </div>
+  </div>
+</div>

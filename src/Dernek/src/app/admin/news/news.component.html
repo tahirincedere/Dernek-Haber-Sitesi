@@ -1,0 +1,25 @@
+<table class="table" *ngIf="newsList">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Subject</th>
+      <th scope="col">Validity Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let val of newsList">
+      <td>{{val.id}}</td>
+      <td>{{val.subject}}</td>
+      <td>{{val.validityDate}}</td>
+
+      <td>
+        <button class="btn btn-info"  routerLink="/admin/news/edit/{{val.id}}" >Update</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="delete(val.id)">Delete</button>
+      </td>
+      </tr>
+  </tbody>
+</table>
+<button class="btn btn-primary" routerLink="/admin/news/create">Create News</button>
+<router-outlet></router-outlet>
