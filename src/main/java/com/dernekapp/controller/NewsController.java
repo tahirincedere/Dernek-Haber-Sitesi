@@ -1,10 +1,8 @@
 package com.dernekapp.controller;
 
 import com.dernekapp.dto.NewsDto;
-import com.dernekapp.entity.News;
 import com.dernekapp.paths.ApiPaths;
 import com.dernekapp.service.NewsService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

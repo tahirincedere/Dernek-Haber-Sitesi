@@ -6,9 +6,10 @@ export class AnnouncementPayload{
      validityDate:Date;
      file:String;
      createdAt:Date
-    
 
-   
 
-    
+
+
+
+
 }

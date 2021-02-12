@@ -1,8 +1,6 @@
 package com.dernekapp.service;
 
 import com.dernekapp.dto.AnnouncementDto;
-import com.dernekapp.dto.NewsDto;
-
 import java.util.List;
 
 public interface AnnouncementService {

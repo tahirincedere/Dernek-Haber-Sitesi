@@ -19,21 +19,13 @@ openModal(template)
 {
 this.modalRef=this.modal.show(template);
 }
-  
+
   ngOnInit() {
     this.newsService.getAll().subscribe(res=>{
 
       this.newsList=res;
-      this.newsList.forEach( res=>{
-        
 
-      })
     })
-     
-    
-      
-    
-
   }
 
 }

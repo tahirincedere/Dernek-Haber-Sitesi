@@ -62,15 +62,11 @@ export class NewsEditComponent implements OnInit {
     {
       alert('Gerekli alanları doldurunuz')
     }
-
-
-
   }
 
   ngOnInit() {
     let id =+this.activatedRouter.snapshot.paramMap.get('id');
     this.getForms(id);
-
 
   }
 

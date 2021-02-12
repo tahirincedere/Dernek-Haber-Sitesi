@@ -26,20 +26,13 @@ export class AnnouncementEditComponent implements OnInit {
       this.announcement.validityDate=res.validityDate;
       this.announcement.details=res.details;
       this.setForms(this.announcement)
-     
-      
-
     })
-
-    
-
-
   }
   update()
   {
     if(this.announcementForms.valid)
     {
-     
+
       this.announcementService.update(this.announcement.id,this.announcementForms.value).subscribe(res=>{
         console.log(res)
       })
@@ -50,7 +43,7 @@ export class AnnouncementEditComponent implements OnInit {
 
   setForms(announcenmentDb:AnnouncementPayload)
     {
- 
+
       this.announcementForms=this.formBuilder.group({
         'id':[announcenmentDb.id],
         'subject':[announcenmentDb.subject,[Validators.required,Validators.minLength(5)]],

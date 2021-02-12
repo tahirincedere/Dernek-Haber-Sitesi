@@ -1,16 +1,12 @@
 package com.dernekapp.service.serviceImpl;
 
 import com.dernekapp.dto.AnnouncementDto;
-import com.dernekapp.dto.NewsDto;
 import com.dernekapp.entity.Announcement;
-import com.dernekapp.entity.News;
 import com.dernekapp.exception.AnnouncementNotFoundException;
-import com.dernekapp.exception.NewsNotFoundException;
 import com.dernekapp.exception.SubjectUniqueException;
 import com.dernekapp.repository.AnnouncementRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
-
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
